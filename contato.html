@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Clinica de Podologia em Maracanaú">
+    <meta name="keywords" content="podologia, cuidados com os pés, clínica de podologia em Maracanaú">
+    <meta name="author" content="Lígia Alves">
+    <title>Lígia Alves Podologia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Definindo o estilo global */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #f9f9f9, #e4f7e5);
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #2C6B2F;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            transform: translateY(-50px);
+            animation: slideDown 0.6s ease-in-out forwards;
+        }
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            letter-spacing: 2px;
+        }
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-top: 10px;
+            color: #ddd;
+        }
+
+        /* Menu de navegação */
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            animation: fadeIn 1s ease-out;
+        }
+        nav a {
+            color: white;
+            padding: 18px 30px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #575757;
+            transform: scale(1.1);
+        }
+
+        /* Estrutura do conteúdo */
+        .container {
+            width: 85%;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+        /* Estilo das seções */
+        .about, .services, .contact {
+            margin-bottom: 40px;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .about h2, .services h2, .contact h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            color: #2C6B2F;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .about p, .services ul, .contact p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #666;
+        }
+        .services ul {
+            padding-left: 20px;
+        }
+        .services li {
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        /* Efeito nas imagens da galeria */
+        .gallery {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .gallery img {
+            width: 32%;
+            border-radius: 8px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #2C6B2F;
+            color: white;
+            text-align: center;
+            padding: 25px 0;
+            font-size: 1rem;
+            margin-top: 40px;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Animações */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-50px);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            header p {
+                font-size: 1rem;
+            }
+            nav a {
+                padding: 12px 20px;
+                font-size: 1rem;
+            }
+            .about h2, .services h2, .contact h2 {
+                font-size: 2rem;
+            }
+            .services li {
+                font-size: 1rem;
+            }
+            .gallery img {
+                width: 48%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            header p {
+                font-size: 0.9rem;
+            }
+            nav a {
+                padding: 10px 15px;
+                font-size: 0.9rem;
+            }
+            .about h2, .services h2, .contact h2 {
+                font-size: 1.8rem;
+            }
+            .gallery img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+     <!-- Cabeçalho -->
+    <header>
+        <img src="download.png" alt="logo-ligia" width="220x">
+        <h1>Lígia Alves Podologia</h1>
+        <p>Cuidando da saúde dos seus pés com excelência e carinho</p>
+    </header>
+
+    <!-- Menu de navegação -->
+    <nav>
+         <a href="index.html">Sobre</a>
+          <a href="servicos.html">Serviços</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="contato.html">Contate-nos</a>
+         <a href="equipe.html">Equipe</a>
+    </nav>
+
+    <!-- Seção "Contato" -->
+        <section id="contact" class="contact">
+            <h2>Contato</h2>
+            <p><strong>Para agendamentos ou mais informações, entre em contato conosco:</strong></p>
+            <p>WhatsApp: <a href="https://wa.me/558588131371" target="_blank">(85) 98813-1371</a></p>
+            <p>Endereço: <a href="https://maps.app.goo.gl/LNTMrvn7yLekmSd16" target="_blank">R. XXIX, 43 - Boa Vista, Maracanaú - CE, 
+            61901-400, Brasil</a></p>
+            <p>Instagram: <a href="https://www.instagram.com/ligiaalvespodologia/" target="_blank">@ligiaalvespodologia</a> </p>
+        </section>
